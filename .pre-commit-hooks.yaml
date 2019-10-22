@@ -1,11 +1,11 @@
 -   id: runway-test
     name: Runway test
     description: Runs runway test on cli
-    entry: runway.sh
+    system: runway test
     language: script
 
 -   id: runway-test-pipenv
     name: Runway test via pipenv
     description: Runs runway test in pipenv
-    entry: punway-pipenv.sh
+    system: pipenv run runway test
     language: script

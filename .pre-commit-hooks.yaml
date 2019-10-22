@@ -1,11 +1,11 @@
 -   id: runway-test
     name: Runway test
     description: Runs runway test on cli
-    entry: runway test
+    entry: runway.sh
     language: script
 
-# -   id: runway-test-pipenv
-#     name: Runway test via pipenv
-#     description: Prevent giant files from being committed
-#     entry: runway-test-pipenv
-#     language: python
+-   id: runway-test-pipenv
+    name: Runway test via pipenv
+    description: Runs runway test in pipenv
+    entry: punway-pipenv.sh
+    language: script

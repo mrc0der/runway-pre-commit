@@ -1,2 +1,2 @@
-#!/binn/bash
+#!/bin/bash
 pipenv run runway test

@@ -6,6 +6,7 @@ import argparse
 import os.path
 from typing import Optional
 from typing import Sequence
+import subprocess
 
 
 def main(argv=None):  # type: (Optional[Sequence[str]]) -> int
@@ -15,11 +16,26 @@ def main(argv=None):  # type: (Optional[Sequence[str]]) -> int
 
     retv = 0
 
-    for filename in args.filenames:
-        print(filename)
+    # for filename in args.filenames:
+    #     print(filename)
+
+    subprocess.call(["runway", "test"])
 
     return retv
 
+def main_pipenv(argv=None):  # type: (Optional[Sequence[str]]) -> int
+    parser = argparse.ArgumentParser(description='Checks for broken symlinks.')
+    parser.add_argument('filenames', nargs='*', help='Filenames to check')
+    args = parser.parse_args(argv)
+
+    retv = 0
+
+    # for filename in args.filenames:
+    #     print(filename)
+
+    subprocess.call(["runway", "test"])
+
+    return retv
 
 if __name__ == '__main__':
     exit(main())

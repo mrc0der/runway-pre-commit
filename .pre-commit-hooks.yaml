@@ -1,7 +1,8 @@
 -   id: runway-test
     name: Runway test
     description: Runs runway test on cli
-    entry: runway test
+    entry: runway
+    args: [test]
     language: system
 
 -   id: runway-test-pipenv

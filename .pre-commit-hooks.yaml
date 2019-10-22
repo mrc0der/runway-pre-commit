@@ -1,13 +1,25 @@
+# -   id: runway-test
+#     name: Runway test
+#     description: Runs runway test on cli
+#     entry: runway
+#     args: [test]
+#     language: system
+
+# -   id: runway-test-pipenv
+#     name: Runway test via pipenv
+#     description: Runs runway test in pipenv
+#     entry: pipenv run runway test
+#     language: system
+
 -   id: runway-test
     name: Runway test
     description: Runs runway test on cli
-    entry: runway
+    entry: runway.sh
     args: [test]
-    language: system
+    language: script
 
 -   id: runway-test-pipenv
     name: Runway test via pipenv
     description: Runs runway test in pipenv
-    system: pipenv run runway test
-    entry: pipenv run runway test
-    language: system
+    entry: runway-pipenv.sh
+    language: script

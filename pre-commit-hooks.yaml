@@ -1,0 +1,13 @@
+-   id: runway-test
+    name: Runway test
+    description: Runs runway test on cli
+    entry: runway-test
+    language: python
+    types: [python]
+    args: [-i]
+
+# -   id: runway-test-pipenv
+#     name: Runway test via pipenv
+#     description: Prevent giant files from being committed
+#     entry: runway-test-pipenv
+#     language: python

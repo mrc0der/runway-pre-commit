@@ -1,10 +1,8 @@
 -   id: runway-test
     name: Runway test
     description: Runs runway test on cli
-    entry: runway-test
-    language: python
-    types: [python]
-    args: [-i]
+    entry: runway test
+    language: script
 
 # -   id: runway-test-pipenv
 #     name: Runway test via pipenv
